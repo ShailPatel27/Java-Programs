@@ -1,5 +1,3 @@
-package AppletPrograms;
-
 import java.applet.*;  
 import java.awt.*;  
 import java.util.*;  
