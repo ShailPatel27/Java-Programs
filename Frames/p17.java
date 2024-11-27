@@ -4,7 +4,7 @@ import java.awt.event.*;
 
 public class p17 extends Frame implements KeyListener
 {
-    int r, b, g = 0;
+    int r = 0, b = 0, g = 0;
 
     p17()
     {

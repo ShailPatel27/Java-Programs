@@ -1,30 +1,18 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class j1
-{
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost:3306/dbsocet";
-
-    static final String USER = "root";
-    static final String PASS = "";
-    
+{   
     public static void main(String[] args)
-    {
-        Connection conn = null;
-        Statement stmt = null;
-        
+    {    
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
 
             System.out.println("Connecting to database...");
-            conn = DriverManager.getConnection(DB_URL, USER, PASS);
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbsocet", "root", "");
 
             System.out.println("Creating table...");
-            stmt = conn.createStatement();
+            Statement stmt = conn.createStatement();
             String sql = "CREATE TABLE `javasql`.`student` ( `sid` INT(2) NOT NULL , `sname` VARCHAR(20) NOT NULL ) ENGINE = InnoDB;";
             stmt.executeUpdate(sql);
             System.out.println("Database created successfully...");

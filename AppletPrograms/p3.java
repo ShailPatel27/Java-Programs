@@ -1,12 +1,11 @@
-package AppletPrograms;
 import java.awt.*;
 import java.applet.*;
 
-/*<applet code = "p3.class" height = "200" width = "200">
-* <param name = name value = "Shail">
-* <param name = age value = "18">
-* <param name = sem value = "6">
-* <param name = year value = "3">
+/*<applet code="p3.class" height="200" width="200">
+* <param name=name value="Shail">
+* <param name=age value="18">
+* <param name=sem value="6">
+* <param name=year value="3">
 </applet>
 */
 

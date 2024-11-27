@@ -20,8 +20,8 @@ public class Prac_3_1
 				con.close();
 		}
 		catch(Exception e)
-			{
-				System.out.println(e);
-			}
+		{
+			System.out.println(e);
 		}
+	}
 }

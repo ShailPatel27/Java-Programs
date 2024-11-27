@@ -5,13 +5,10 @@ public class pr11
 {
     public static void main(String[] args)
     {
-        Connection conn = null;
-
         try
         {
             Class.forName("com.mysql.jdbc.Driver");
-            System.out.println("Connecting to Database");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/dbsocet", "root", "");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/project", "root", "");
 
             if(!conn.isClosed())
             {

@@ -1,23 +1,24 @@
 package Lab;
-import java.awt.*;
+
 import java.awt.event.*;
 import java.sql.*;
+import javax.swing.*;
 
-public class pr12 extends Frame implements ActionListener
+public class pr12 extends JFrame implements ActionListener
 {
-    TextField tb1, tb2;
-    Label l1, l2, l3;
-    Button insert, update, delete;
+    JTextField tb1, tb2;
+    JLabel l1, l2, l3;
+    JButton insert, update, delete;
     pr12()
     {
-        l1 = new Label("ID");
-        tb1 = new TextField();
-        l2 = new Label("Name");
-        tb2 = new TextField();
-        insert = new Button("Insert");
-        update = new Button("update");
-        delete = new Button("delete");
-        l3 = new Label("");
+        l1 = new JLabel("ID");
+        tb1 = new JTextField();
+        l2 = new JLabel("Name");
+        tb2 = new JTextField();
+        insert = new JButton("Insert");
+        update = new JButton("update");
+        delete = new JButton("delete");
+        l3 = new JLabel("");
 
         add(l1);
         add(tb1);
@@ -34,9 +35,9 @@ public class pr12 extends Frame implements ActionListener
         l2.setBounds(300, 80, 50, 20);
         tb2.setBounds(350, 80, 100, 20);
 
-        insert.setBounds(250, 130, 50, 20);
-        update.setBounds(350, 130, 50, 20);
-        delete.setBounds(450, 130, 50, 20);
+        insert.setBounds(250, 130, 80, 20);
+        update.setBounds(350, 130, 80, 20);
+        delete.setBounds(450, 130, 80, 20);
 
         l3.setBounds(350, 180, 100, 20);
 

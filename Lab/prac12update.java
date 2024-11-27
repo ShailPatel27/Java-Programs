@@ -15,8 +15,8 @@ public class prac12update extends JFrame implements ActionListener {
         setLayout(null);
         setVisible(true);
 
-        l1 = new JLabel("En_Roll");
-        l2 = new JLabel("Name");
+        l1 = new JLabel("id");
+        l2 = new JLabel("name");
         l1.setBounds(20, 20, 100, 25);
         l2.setBounds(20, 50, 100, 25);
         add(l1);
@@ -40,10 +40,10 @@ public class prac12update extends JFrame implements ActionListener {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/lab", "root", "");
             Statement st = con.createStatement();
             st.executeUpdate(
-                    "update `student` set `id`='" + t1.getText() + "',`studentname`='" + t2.getText()
+                    "update `student` set `id`='" + t1.getText() + "',`name`='" + t2.getText()
                             + "' WHERE `id`=4;");
             JOptionPane.showMessageDialog(null, "Query Executed :)");
         } catch (Exception e) {

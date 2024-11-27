@@ -15,8 +15,8 @@ public class prac12insert extends JFrame implements ActionListener {
         setLayout(null);
         setVisible(true);
 
-        l1 = new JLabel("En_Roll");
-        l2 = new JLabel("Name");
+        l1 = new JLabel("id");
+        l2 = new JLabel("name");
         l1.setBounds(20, 20, 100, 25);
         l2.setBounds(20, 50, 100, 25);
         add(l1);
@@ -40,8 +40,8 @@ public class prac12insert extends JFrame implements ActionListener {
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "");
-            PreparedStatement pst = con.prepareStatement("insert into student values (?,?)");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/lab", "root", "");
+            PreparedStatement pst = con.prepareStatement("insert into javadb values (?,?)");
             pst.setInt(1, Integer.parseInt(t1.getText()));
             pst.setString(2, t2.getText());
             pst.executeUpdate();

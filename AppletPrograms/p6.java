@@ -2,6 +2,8 @@ import java.applet.*;
 import java.awt.*;  
 import java.util.*;  
 import java.text.*;  
+
+/*<applet code = "p6.class" height = "500" width = "500"></applet>*/
   
 public class p6 extends Applet implements Runnable 
 {  

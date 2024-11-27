@@ -17,6 +17,8 @@ public class p3 extends JFrame
         l2.setFont(f);
         l2.setHorizontalAlignment(JLabel.RIGHT);
         add(l2);
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) 
